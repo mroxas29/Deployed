@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Upload Image
+	</title>
+
+	<link rel="icon"  href="assets/Logo shadow.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+		<div class="container-fluid nav">
+		<div class="row" >
+			
+			<div class="col logo">
+				<a href="http://localhost:3000/"><img src="assets/mainLogo.png" height="75px" style="padding: 10px;"></a>
+			</div>
+			
+
+			<div class="container pages">
+
+				<div class="row">
+					
+					<div class="col " style="right: 0">
+					<a href="http://localhost:3000/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+					  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+					</svg> Home</a>
+					</div>
+
+					<div class="col ">
+					<a href="http://localhost:3000/templates"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+					  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+					</svg> Templates</a>
+					</div>
+
+
+					<div class="col cart">
+					<a href="http://localhost:3000/cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+					  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg> Cart</a>
+					</div>
+
+
+					<div class="col review">
+					<a href="http://localhost:3000/review"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+				<path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+				</svg> Reviews</a>
+					</div>
+
+
+				</div>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+	</div>
+
+
+<!-- SIMULA DITO LANG KAYO PWEDE MAG ADD -->
+<br><br><br><br>
+<div class="container intro">
+	<div class="row">
+		<div class="col-sm-6">
+			<br><br><br><br><br>
+			<h1>Upload your design</h1>
+		</div>
+		<div class="col-sm-6 upload">
+			
+<h1>Tarpaulin 2</h1>
+			<hr>
+			
+				<form action="/" method="GET">
+				<label for="item">Item: </label>
+                <input type="text" id="item" 
+                       value="Tarpaulin 2" name="item" disabled>
+	<br><br>		
+				<label for="quantity">Quantity: </label>
+                <input type="text" id="quantity" 
+                       value="3" name="quantity" disabled>
+<br><br>
+				<label for="price">Price: </label>
+                <input type="text" id="price" 
+                       value="300" name="price" disabled>
+<br><br>
+				<label for="code">Code: </label>
+                <input type="text" id="code" 
+                       value="T2" name="code" disabled>
+<br><br>
+<center>
+				<label for="image">Upload Image</label>
+                <input type='file' onchange="readURL(this);" />
+    			<img id="img" src="#" alt="your image" />
+
+				
+				</form>
+				<input type="button" name="submit" id="submit" value="Add to Cart" onclick="addData()" class="add" style="background-color: bisque;">
+				<br><br><br><br>
+			</center>
+			<br>
+			<a href="http://localhost:3000/templates" id="back" >Back</a>
+		
+			
+
+			<br><br>
+		
+			
+
+		</div>
+		
+	</div>
+	
+</div>
+
+
+
+<div id="ATC" class="modal">
+
+  
+  <div class="ATC-regards">
+    <span class="close">&times;</span>
+    <p >Successfully added to Cart <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg> </p>
+<a href="http://localhost:3000/" class="ATC-back" >Back to Home</a>
+
+<a href="http://localhost:3000/checkout" id="ATC-add" >Checkout <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ui-checks" viewBox="0 0 16 16">
+  <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 1 1 .708.708l-2 2zm0 8a.5.5 0 0 1-.708 0l-1-1a.5.5 0 0 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708.708l-2 2zM7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+</svg></a>
+
+<br>
+		
+  </div>
+
+</div>
+
+
+<!-- HANGGANG DITO LANG PWEDE MAG ADD NG CODE -->
+
+<button class="openBot" onclick="openBot()">?</button>
+
+
+
+<div class="botbar">
+
+    <div class="copyr"> 
+      <p>Copyright 2021 PrintPad.com. All Rights Reserved.</p>
+    </div>
+
+    <div class="botlist">
+      <ul class="botwidgets">
+        <li><a href="http://localhost:3000/">HOME</a></li>
+        <li><a href="http://localhost:3000/templates">TEMPLATES</a></li>
+        <li><a href="http://localhost:3000/cart">CART</a></li>
+        <li><a href="http://localhost:3000/review">REVIEWS</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+<a href="#top" id="return-to-top"><i class="icon-chevron-up"></i><p style="text-align: center; color: white; font-size: 30px;" >↑</p></a>
+
+</body>
+</html>
